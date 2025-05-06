@@ -110,9 +110,3 @@ ingress:
     #   app: app-tls-secret
   hostnames:
     app: my.packmind.local
-# (optional) install MongoDB server
-mongodb:
-  # experimental: to be validated with MongoDB 5+
-  enabled: false
-  # https://github.com/bitnami/charts/blob/main/bitnami/mongodb/values.yaml
-  auth: {}
