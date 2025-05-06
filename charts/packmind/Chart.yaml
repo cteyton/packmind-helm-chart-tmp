@@ -6,6 +6,6 @@ appVersion: 1.0.0
 description: Elevate developers and code with Packmind
 home: https://github.com/packmindhub/packmind-helm-chart
 maintainers:
-  - name: cteyton
+  - name: Cedric Teyton
     email: cedric.teyton@packmind.com
 icon: https://packmind.com/wp-content/uploads/2024/01/LogoMark_Packmind.png
