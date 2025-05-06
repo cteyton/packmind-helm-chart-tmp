@@ -471,7 +471,7 @@ spec:
     spec:
       containers:
       - name: mongodb
-        image: mongo:4.4.1
+        image: {{ .Values.app.databaseEmbedded.mongodbImage }}
         {{- if .Values.app.resources.mongodb }}
         resources:
           {{- toYaml .Values.app.resources.mongodb | nindent 12 }}

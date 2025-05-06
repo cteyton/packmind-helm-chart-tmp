@@ -21,11 +21,11 @@ If you had already added this repo earlier, run `helm repo update` to retrieve t
 
 Before installing the chart, you can check the default **values** [here](https://github.com/packmind/packmind-helm-chart/blob/main/charts/packmind/values.yaml), especially about the **MongoDB 4.x** connection.
 
-## MongoDB 4.x connection
+## MongoDB 6.x connection
 
 You have 2 options to deal with MongoDB.
 
-### 1. Use the embedded MongoDB 4.x
+### 1. Use the embedded MongoDB 6.x
 
 Setting the `app.databaseEmbedded.enabled` at `true` will run a MongoDB instance in the cluster.
 
@@ -40,7 +40,7 @@ The `app.databaseEmbedded.enabled` at `true` will run a MongoDB instance in the 
 
 There is a section `app.databaseEmbedded.pvc` to deal with the persistent storage, enabled by default.
 
-### 2. Use your instance MongoDB 4.x
+### 2. Use your instance MongoDB 6.x
 
 Setting the `app.databaseEmbedded.enabled` at `false` will require you to indicate the URI of your MongoDB instance.
 

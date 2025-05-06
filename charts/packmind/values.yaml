@@ -34,6 +34,7 @@
       # AI_REQUEST_TIMEOUT: 60000
   databaseEmbedded:
     enabled: true  # use an internal mongodb in the cluster
+    mongodbImage: mongo:6.0.25
     pvc:
       enabled: true
       storageClassName: local-path
