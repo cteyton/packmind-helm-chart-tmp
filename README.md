@@ -2,8 +2,8 @@
 
 # Helm chart for Packmind
 
-[![CI](https://github.com/pakcmindhub/packmind-helm-chart/actions/workflows/ci.yaml/badge.svg?branch=main)](https://github.com/packmindhub/packmind-helm-chart/actions/workflows/ci.yaml)
-[![Release](https://github.com/pakcmindhub/packmind-helm-chart/actions/workflows/release.yaml/badge.svg?branch=main)](https://github.com/packmindhub/packmind-helm-chart/actions/workflows/release.yaml)
+[![CI](https://github.com/packmindhub/packmind-helm-chart/actions/workflows/ci.yaml/badge.svg?branch=main)](https://github.com/packmindhub/packmind-helm-chart/actions/workflows/ci.yaml)
+[![Release](https://github.com/packmindhub/packmind-helm-chart/actions/workflows/release.yaml/badge.svg?branch=main)](https://github.com/packmindhub/packmind-helm-chart/actions/workflows/release.yaml)
 
 This Helm chart will install [Packmind](https://packmind.com/), the collaborative platform to raise your coding standards, on your Kubernetes cluster.
 
