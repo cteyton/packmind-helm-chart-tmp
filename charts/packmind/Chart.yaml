@@ -1,8 +1,8 @@
 apiVersion: v2
 name: packmind
 type: application
-version: 1.2.2
-appVersion: 1.2.2
+version: 1.2.3
+appVersion: 1.2.3
 description: Elevate developers and code with Packmind
 home: https://github.com/packmindhub/packmind-helm-chart
 maintainers:
