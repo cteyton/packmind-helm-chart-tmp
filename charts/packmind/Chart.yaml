@@ -1,11 +1,12 @@
 apiVersion: v2
 name: packmind
 type: application
-version: 1.2.1
-appVersion: 1.2.1
+version: 1.2.2
+appVersion: 1.2.2
 description: Elevate developers and code with Packmind
 home: https://github.com/packmindhub/packmind-helm-chart
 maintainers:
-  - name: Cedric Teyton
+  - name: cteyton
     email: cedric.teyton@packmind.com
+    url: https://github.com/cteyton
 icon: https://packmind.com/wp-content/uploads/2024/01/LogoMark_Packmind.png
