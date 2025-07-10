@@ -8,4 +8,5 @@ home: https://github.com/packmindhub/packmind-helm-chart
 maintainers:
   - name: Cedric Teyton
     email: cedric.teyton@packmind.com
+    url: https://github.com/cteyton
 icon: https://packmind.com/wp-content/uploads/2024/01/LogoMark_Packmind.png
