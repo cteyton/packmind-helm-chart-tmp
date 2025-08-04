@@ -128,6 +128,12 @@ spec:
              port: 3000
            initialDelaySeconds: 30
            periodSeconds: 30
+          {{- if .Values.app.caCerts.enabled }}
+          volumeMounts:
+            - name: ca-certs
+              mountPath: /ca-certs
+              readOnly: true
+          {{- end }}
           env:
             - name: REDIS_HOST
               value: "packmind-redis"
@@ -158,6 +164,10 @@ spec:
                   name: {{ $value.secretName }}
                   key: {{ $value.secretKey }}
             {{- end }}
+            {{- if .Values.app.caCerts.enabled }}
+            - name: NODE_EXTRA_CA_CERTS
+              value: /ca-certs/{{ .Values.caCerts.secret.key }}
+            {{- end }}
       {{- if and .Values.app.images.secret .Values.app.images.secret.name }}
       imagePullSecrets:
         - name: {{ .Values.app.images.secret.name }}
@@ -173,6 +183,12 @@ spec:
       {{- with .Values.tolerations }}
       tolerations:
         {{- toYaml . | nindent 8 }}
+      {{- end }}
+      {{- if .Values.app.caCerts.enabled }}
+      volumes:
+        - name: ca-certs
+          secret: 
+            secretName: {{ .Values.caCerts.secret.name}}
       {{- end }}
 ---
 apiVersion: apps/v1

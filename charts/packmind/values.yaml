@@ -51,6 +51,11 @@
   # - envVariable: THEMIS_AUTH_CONFIG_ADMIN_PASSWORD
   #   secretName: secret-openldap
   #   secretKey: openldap-password
+  caCerts: # add custom CA bundle to app container
+    enabled: false
+    # secret:
+    #   name: ca-certs
+    #   key: bundle.crt
   redis:
     pvc:
       enabled: false
