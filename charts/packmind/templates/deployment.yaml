@@ -166,7 +166,7 @@ spec:
             {{- end }}
             {{- if .Values.app.caCerts.enabled }}
             - name: NODE_EXTRA_CA_CERTS
-              value: /ca-certs/{{ .Values.caCerts.secret.key }}
+              value: /ca-certs/{{ .Values.app.caCerts.secret.key }}
             {{- end }}
       {{- if and .Values.app.images.secret .Values.app.images.secret.name }}
       imagePullSecrets:
@@ -188,7 +188,7 @@ spec:
       volumes:
         - name: ca-certs
           secret: 
-            secretName: {{ .Values.caCerts.secret.name}}
+            secretName: {{ .Values.app.caCerts.secret.name}}
       {{- end }}
 ---
 apiVersion: apps/v1
