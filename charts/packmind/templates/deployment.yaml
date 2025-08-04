@@ -123,11 +123,11 @@ spec:
           ports:
             - containerPort: 3000
           livenessProbe:
-           httpGet:
-             path: /open/healthcheck/ping
-             port: 3000
-           initialDelaySeconds: 30
-           periodSeconds: 30
+            httpGet:
+              path: /open/healthcheck/ping
+              port: 3000
+            initialDelaySeconds: 30
+            periodSeconds: 30
           {{- if .Values.app.caCerts.enabled }}
           volumeMounts:
             - name: ca-certs
@@ -245,11 +245,11 @@ spec:
           ports:
             - containerPort: 3000
           livenessProbe:
-           httpGet:
-             path: /open/healthcheck/ping
-             port: 3000
-           initialDelaySeconds: 30
-           periodSeconds: 30
+            httpGet:
+              path: /open/healthcheck/ping
+              port: 3000
+            initialDelaySeconds: 30
+            periodSeconds: 30
           {{- if .Values.app.caCerts.enabled }}
           volumeMounts:
             - name: ca-certs
